@@ -1,8 +1,8 @@
 package singtel.models;
 
-public class Animal {
+public interface Animal {
 
-    public void walk() {
-        System.out.println("I am walking");
+    default String getName() {
+        return this.getClass().getSimpleName();
     }
 }
